@@ -22,20 +22,29 @@ Verification tiers L1/L2/L3 · no claim without evidence · structured debugging
 one-failure stop rule · change channel after two same-shaped failures · less is more ·
 read before write.
 
+**Coding discipline**
+- `code-minimalism` — same functionality, fewest elements: single responsibility, deep-not-shallow
+  modules, YAGNI, and the anti-patterns that look like good design (classitis, speculative abstraction)
+
 **Review and build agents** (invoked when relevant)
-- `silent-failure-hunter` — finds error handling that swallows failures without surfacing them
-- `type-design-analyzer` — scores encapsulation, invariant expression, and enforcement
-- `spec-analyst` — extracts requirements and specifications from code or prose
+- `code-architect` — system design, architecture decisions, technology selection
+- `code-reviewer` — PR review: correctness, security, convention compliance
+- `reviewer` — quality assessment with L3 evidence requirements (read the file, don't infer from reports)
+- `impl-agent` — implementation from spec and test skeletons
+- `test-specialist` — test strategy, coverage analysis, TDD/BDD
+- `silent-failure-hunter` — error handling that swallows failures without surfacing them
+- `type-design-analyzer` — encapsulation, invariant expression, invariant enforcement
+- `spec-analyst` — requirements and specifications from code or prose
 - `project-health-auditor` — technical debt, hotspots, speculative abstraction, dead code
-- `bugfixer` — root-cause-first bug fixing with a stop rule on repeated failure
+- `bugfixer` — root-cause-first fixing with a stop rule on repeated failure
 - `qa-tester` — end-to-end verification against real output, not reported success
 - `test-runner` — runs the suite, reads failures, proposes fixes
 - `research-agent` — structured external research with sourced findings
 - `doc-writer` — technical documentation, API docs, changelogs
 
 **Skills**
-- `defense-audit` — evaluates defenses across Detection → Prevention → Recovery → Learning
-- `awwwards-design` — original award-grade web design systems, motion language, page specs
+- `defense-audit` — defenses across Detection → Prevention → Recovery → Learning
+- `awwwards-design` — original award-grade design systems, motion language, page specs
 - `awwwards-audit` — evidence-based UI/UX audit scored on design, usability, creativity, content
 
 
