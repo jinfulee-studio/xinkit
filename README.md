@@ -59,3 +59,5 @@ capability claim it can't back.
 ## License
 
 MIT. See LICENSE.
+
+<!-- auto-bump 验证 -->
