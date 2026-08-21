@@ -1,6 +1,6 @@
 ---
 user-invocable: false
-name: design-awwwards-grade-websites
+name: awwwards-design
 description: 将品牌、用户任务与内容转化为原创的 Awwwards 级网站设计系统、体验概念、页面规格、动效语言、实施 SOP、自我迭代与审批门禁。用于用户要求 Awwwards 风格、award-winning website、沉浸式/编辑式网页、创意开发、品牌站/营销站/作品集/电商重设计，或需要在设计、可用性、创造力、内容、无障碍和性能之间建立可靠取舍时。
 ---
 
@@ -117,7 +117,7 @@ Awwwards 官方主评分是 Design 40%、Usability 30%、Creativity 20%、Conten
 
 **发布质量轨**：检查关键任务、WCAG 2.2 AA、键盘/触摸、响应式、内容准确、错误恢复、浏览器回退及 Core Web Vitals。存在阻断项时，结论必须是 HOLD 或 NO-GO，即使作品质量分很高。
 
-若 `$audit-awwwards-grade-uiux` 可用，调用它完成独立复审；否则按 `delivery-sop.md` 的门禁执行。
+若 `$awwwards-audit` 可用，调用它完成独立复审；否则按 `delivery-sop.md` 的门禁执行。
 
 ### 8. 自我迭代
 

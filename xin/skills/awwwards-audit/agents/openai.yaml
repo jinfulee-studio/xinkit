@@ -1,4 +1,4 @@
 interface:
   display_name: "评审 Awwwards 级 UI/UX"
   short_description: "量化作品竞争力、发布质量与整改优先级，并输出可靠审批结论"
-  default_prompt: "使用 $audit-awwwards-grade-uiux 审核这个 UI/UX，给出证据化评分、发布决定和可执行整改计划。"
+  default_prompt: "使用 $awwwards-audit 审核这个 UI/UX，给出证据化评分、发布决定和可执行整改计划。"

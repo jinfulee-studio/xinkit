@@ -1,6 +1,6 @@
 ---
 user-invocable: false
-name: audit-awwwards-grade-uiux
+name: awwwards-audit
 description: 以 Awwwards 官方 Design 40% / Usability 30% / Creativity 20% / Content 10% 模型和独立发布门禁审核网站、Figma、截图、原型或前端实现，输出证据化量化报告、置信度、GO/HOLD/NO-GO 审批、根因分析、Awwwards 级优化方案和复测闭环。用于 UI/UX review、设计评审、上线审核、Awwwards 风格差距分析、可访问性/性能/动效/响应式审计、评分争议或利益相关者要求抬高分数时。
 ---
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "设计 Awwwards 级网站"
   short_description: "把品牌目标转成原创、可用、可发布的获奖级网页体验系统"
-  default_prompt: "使用 $design-awwwards-grade-websites 为这个项目建立原创设计系统、体验概念、交付 SOP 与审批门禁。"
+  default_prompt: "使用 $awwwards-design 为这个项目建立原创设计系统、体验概念、交付 SOP 与审批门禁。"
