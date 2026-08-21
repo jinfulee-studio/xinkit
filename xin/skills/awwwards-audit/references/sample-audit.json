@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "project": "Example immersive launch page",
+  "version": "commit:7f3b2c1",
+  "artifact_author": "Product Design Team",
+  "artifact_type": "staging",
+  "access_mode": "runtime",
+  "audit_time": "2026-07-20T12:00:00+07:00",
+  "scope": "Homepage and primary contact path at 1440px and 390px",
+  "evidence": [
+    {
+      "id": "E01",
+      "tag": "OBSERVED",
+      "kind": "runtime_walkthrough",
+      "source": "Frozen desktop and mobile build",
+      "captured_at": "2026-07-20T10:00:00+07:00",
+      "scope": "Homepage visual system",
+      "limitations": "Two viewports only"
+    },
+    {
+      "id": "E02",
+      "tag": "OBSERVED",
+      "kind": "runtime_walkthrough",
+      "source": "Keyboard walkthrough",
+      "captured_at": "2026-07-20T10:20:00+07:00",
+      "scope": "Global navigation and contact CTA",
+      "limitations": "Voice control and switch input not tested"
+    },
+    {
+      "id": "E03",
+      "tag": "MEASURED",
+      "kind": "lab_measurement",
+      "source": "Contrast measurement",
+      "captured_at": "2026-07-20T10:30:00+07:00",
+      "scope": "Hero body copy",
+      "limitations": "Other templates not sampled"
+    },
+    {
+      "id": "E04",
+      "tag": "OBSERVED",
+      "kind": "runtime_walkthrough",
+      "source": "Motion and reduced-motion walkthrough",
+      "captured_at": "2026-07-20T10:45:00+07:00",
+      "scope": "Homepage",
+      "limitations": "Low-power mobile not tested"
+    },
+    {
+      "id": "E05",
+      "tag": "MEASURED",
+      "kind": "lab_measurement",
+      "source": "Three repeat lab runs on representative mid-tier mobile profile",
+      "captured_at": "2026-07-20T11:10:00+07:00",
+      "scope": "Homepage cold load",
+      "limitations": "No production field data"
+    },
+    {
+      "id": "E06",
+      "tag": "PROVIDED",
+      "kind": "content_record",
+      "source": "Brand and content brief",
+      "captured_at": "2026-07-20T09:00:00+07:00",
+      "scope": "Positioning, audience and proof points",
+      "limitations": "Claims not independently verified"
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "creative",
+      "reviewer_identity": "Creative Reviewer",
+      "role": "Creative direction",
+      "scores": {
+        "design": {
+          "concept_art_direction": {"value": 7.8, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "Inner templates not reviewed"},
+          "hierarchy_composition": {"value": 7.2, "confidence": 0.8, "evidence_ids": ["E01"], "limitation": "Only two viewports"},
+          "typography_color_media": {"value": 7.5, "confidence": 0.8, "evidence_ids": ["E01", "E03"], "limitation": "Contrast sampled, not exhaustive"},
+          "system_states": {"value": 5.8, "confidence": 0.6, "evidence_ids": ["E01", "E04"], "limitation": "Failure states incomplete"},
+          "responsive": {"value": 5.5, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "Two viewports only"}
+        },
+        "usability": {
+          "task_information_architecture": {"value": 5.0, "confidence": 0.6, "evidence_ids": ["E01", "E02"], "limitation": "No user study"},
+          "navigation_discoverability": {"value": 3.0, "confidence": 0.8, "evidence_ids": ["E02"], "limitation": "Only primary navigation tested"},
+          "feedback_recovery": {"value": 4.5, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "Form recovery not in scope"},
+          "responsive_input": {"value": 3.5, "confidence": 0.8, "evidence_ids": ["E02"], "limitation": "Switch input not tested"},
+          "accessibility_control": {"value": 3.2, "confidence": 0.8, "evidence_ids": ["E02", "E03", "E04"], "limitation": "Screen reader not tested"}
+        },
+        "creativity": {
+          "original_concept": {"value": 8.2, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "Reference similarity audit pending"},
+          "meaningful_interaction": {"value": 7.2, "confidence": 0.8, "evidence_ids": ["E01", "E04"], "limitation": "Fallback weak"},
+          "brand_specificity": {"value": 7.6, "confidence": 0.6, "evidence_ids": ["E06"], "limitation": "Brand claims provided, not verified"},
+          "media_technology_innovation": {"value": 7.4, "confidence": 0.8, "evidence_ids": ["E01", "E04"], "limitation": "Performance cost unresolved"}
+        },
+        "content": {
+          "clarity_relevance": {"value": 5.2, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "No comprehension test"},
+          "narrative_hierarchy": {"value": 6.0, "confidence": 0.8, "evidence_ids": ["E01"], "limitation": "Homepage only"},
+          "evidence_credibility": {"value": 4.0, "confidence": 0.6, "evidence_ids": ["E06"], "limitation": "Claims not independently verified"},
+          "copy_media_localization": {"value": 5.5, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "One language only"}
+        }
+      }
+    },
+    {
+      "id": "ux_content",
+      "reviewer_identity": "UX Content Reviewer",
+      "role": "UX and content",
+      "scores": {
+        "design": {
+          "concept_art_direction": {"value": 7.2, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "Inner templates not reviewed"},
+          "hierarchy_composition": {"value": 6.6, "confidence": 0.8, "evidence_ids": ["E01"], "limitation": "Only two viewports"},
+          "typography_color_media": {"value": 6.2, "confidence": 0.8, "evidence_ids": ["E01", "E03"], "limitation": "Contrast sampled, not exhaustive"},
+          "system_states": {"value": 5.2, "confidence": 0.6, "evidence_ids": ["E01", "E04"], "limitation": "Failure states incomplete"},
+          "responsive": {"value": 5.0, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "Two viewports only"}
+        },
+        "usability": {
+          "task_information_architecture": {"value": 4.6, "confidence": 0.8, "evidence_ids": ["E01", "E02"], "limitation": "No user study"},
+          "navigation_discoverability": {"value": 2.5, "confidence": 0.8, "evidence_ids": ["E02"], "limitation": "Only primary navigation tested"},
+          "feedback_recovery": {"value": 4.0, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "Form recovery not in scope"},
+          "responsive_input": {"value": 3.0, "confidence": 0.8, "evidence_ids": ["E02"], "limitation": "Switch input not tested"},
+          "accessibility_control": {"value": 2.8, "confidence": 0.8, "evidence_ids": ["E02", "E03", "E04"], "limitation": "Screen reader not tested"}
+        },
+        "creativity": {
+          "original_concept": {"value": 7.4, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "Reference similarity audit pending"},
+          "meaningful_interaction": {"value": 6.8, "confidence": 0.8, "evidence_ids": ["E01", "E04"], "limitation": "Fallback weak"},
+          "brand_specificity": {"value": 6.8, "confidence": 0.6, "evidence_ids": ["E06"], "limitation": "Brand claims provided, not verified"},
+          "media_technology_innovation": {"value": 6.8, "confidence": 0.8, "evidence_ids": ["E01", "E04"], "limitation": "Performance cost unresolved"}
+        },
+        "content": {
+          "clarity_relevance": {"value": 4.5, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "No comprehension test"},
+          "narrative_hierarchy": {"value": 5.5, "confidence": 0.8, "evidence_ids": ["E01"], "limitation": "Homepage only"},
+          "evidence_credibility": {"value": 3.5, "confidence": 0.6, "evidence_ids": ["E06"], "limitation": "Claims not independently verified"},
+          "copy_media_localization": {"value": 5.0, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "One language only"}
+        }
+      }
+    },
+    {
+      "id": "engineering_a11y",
+      "reviewer_identity": "Engineering Accessibility Reviewer",
+      "role": "Engineering and accessibility",
+      "scores": {
+        "design": {
+          "concept_art_direction": {"value": 6.8, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "Creative rationale not independently interviewed"},
+          "hierarchy_composition": {"value": 6.0, "confidence": 0.8, "evidence_ids": ["E01"], "limitation": "Only two viewports"},
+          "typography_color_media": {"value": 5.5, "confidence": 0.8, "evidence_ids": ["E01", "E03"], "limitation": "Contrast sampled, not exhaustive"},
+          "system_states": {"value": 4.5, "confidence": 0.8, "evidence_ids": ["E01", "E04"], "limitation": "Failure states incomplete"},
+          "responsive": {"value": 4.2, "confidence": 0.8, "evidence_ids": ["E01", "E02"], "limitation": "Device matrix incomplete"}
+        },
+        "usability": {
+          "task_information_architecture": {"value": 4.0, "confidence": 0.6, "evidence_ids": ["E01", "E02"], "limitation": "No user study"},
+          "navigation_discoverability": {"value": 2.0, "confidence": 0.8, "evidence_ids": ["E02"], "limitation": "Voice control not tested"},
+          "feedback_recovery": {"value": 3.5, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "Form recovery not in scope"},
+          "responsive_input": {"value": 2.5, "confidence": 0.8, "evidence_ids": ["E02"], "limitation": "Switch input not tested"},
+          "accessibility_control": {"value": 2.0, "confidence": 0.8, "evidence_ids": ["E02", "E03", "E04"], "limitation": "Screen reader not tested"}
+        },
+        "creativity": {
+          "original_concept": {"value": 6.8, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "Reference similarity audit pending"},
+          "meaningful_interaction": {"value": 5.5, "confidence": 0.8, "evidence_ids": ["E01", "E04"], "limitation": "Keyboard and motion fallback fail"},
+          "brand_specificity": {"value": 6.2, "confidence": 0.6, "evidence_ids": ["E06"], "limitation": "Brand claims provided, not verified"},
+          "media_technology_innovation": {"value": 6.2, "confidence": 0.8, "evidence_ids": ["E01", "E04", "E05"], "limitation": "Performance cost unresolved"}
+        },
+        "content": {
+          "clarity_relevance": {"value": 4.2, "confidence": 0.6, "evidence_ids": ["E01", "E06"], "limitation": "No comprehension test"},
+          "narrative_hierarchy": {"value": 5.0, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "Homepage only"},
+          "evidence_credibility": {"value": 3.0, "confidence": 0.6, "evidence_ids": ["E06"], "limitation": "Claims not independently verified"},
+          "copy_media_localization": {"value": 4.5, "confidence": 0.6, "evidence_ids": ["E01"], "limitation": "One language only"}
+        }
+      }
+    }
+  ],
+  "gates": [
+    {"id": "Q-G01", "severity": "P0", "status": "pass", "evidence_ids": ["E01", "E02"], "reason": "Contact path can be completed with pointer input."},
+    {"id": "Q-G02", "severity": "P0", "status": "fail", "evidence_ids": ["E02"], "reason": "Primary navigation is hover-only and its destinations cannot be reached by keyboard."},
+    {"id": "Q-G03", "severity": "P1", "status": "unknown", "evidence_ids": ["E06"], "reason": "Proof points and asset rights were provided but not independently verified."},
+    {"id": "Q-G04", "severity": "P1", "status": "fail", "evidence_ids": ["E04"], "reason": "Continuous autoplay motion has no pause control or reduced-motion equivalent; no dangerous flashing or core-task block was observed."},
+    {"id": "Q-G05", "severity": "P1", "status": "fail", "evidence_ids": ["E02", "E03", "E04"], "reason": "Keyboard navigation and measured 2.6:1 body-copy contrast fail."},
+    {"id": "Q-G06", "severity": "P1", "status": "unknown", "evidence_ids": ["E01"], "reason": "Only two viewports were reviewed; 320 CSS px and 200% text were not tested."},
+    {"id": "Q-G07", "severity": "P1", "status": "fail", "evidence_ids": ["E05"], "reason": "Representative lab runs show LCP 5.8s and CLS 0.31; no field data is available."},
+    {"id": "Q-G08", "severity": "P1", "status": "unknown", "evidence_ids": ["E04", "E05"], "reason": "WebGL and JavaScript failure fallback was not tested."},
+    {"id": "Q-G09", "severity": "P1", "status": "na", "evidence_ids": [], "reason": "The frozen scope has no form, account, payment or data submission."},
+    {"id": "Q-G10", "severity": "P1", "status": "unknown", "evidence_ids": [], "reason": "The approved browser, device and assistive-technology matrix was not supplied."},
+    {"id": "Q-G11", "severity": "P2", "status": "unknown", "evidence_ids": [], "reason": "SEO and metadata were outside this pass."},
+    {"id": "Q-G12", "severity": "P1", "status": "unknown", "evidence_ids": [], "reason": "Production monitoring and rollback ownership were not supplied."}
+  ]
+}

@@ -22,13 +22,22 @@ Verification tiers L1/L2/L3 · no claim without evidence · structured debugging
 one-failure stop rule · change channel after two same-shaped failures · less is more ·
 read before write.
 
-**Review agents** (read-only, invoked when relevant)
+**Review and build agents** (invoked when relevant)
 - `silent-failure-hunter` — finds error handling that swallows failures without surfacing them
 - `type-design-analyzer` — scores encapsulation, invariant expression, and enforcement
 - `spec-analyst` — extracts requirements and specifications from code or prose
+- `project-health-auditor` — technical debt, hotspots, speculative abstraction, dead code
+- `bugfixer` — root-cause-first bug fixing with a stop rule on repeated failure
+- `qa-tester` — end-to-end verification against real output, not reported success
+- `test-runner` — runs the suite, reads failures, proposes fixes
+- `research-agent` — structured external research with sourced findings
+- `doc-writer` — technical documentation, API docs, changelogs
 
 **Skills**
-- `defense-audit` — evaluates a system's defenses across Detection → Prevention → Recovery → Learning
+- `defense-audit` — evaluates defenses across Detection → Prevention → Recovery → Learning
+- `awwwards-design` — original award-grade web design systems, motion language, page specs
+- `awwwards-audit` — evidence-based UI/UX audit scored on design, usability, creativity, content
+
 
 ## What this is not
 
