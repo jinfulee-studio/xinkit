@@ -2,8 +2,10 @@
 # Xin — inject core working axioms into every session's context.
 # Kept deliberately short: this text is paid for on every session start.
 
-read -r -d '' AXIOMS <<'TEXT'
-[xin] Working axioms for this session:
+VER="$(jq -r '.version' "$(dirname "$0")/../.claude-plugin/plugin.json" 2>/dev/null || echo "?")"
+
+read -r -d '' AXIOMS <<TEXT
+[xin v${VER}] Working axioms for this session:
 
 VERIFICATION TIERS — state which one you are at before claiming anything works.
   L1 syntax: it parses (bash -n, tsc --noEmit, jq empty). Proves nothing about behavior.
