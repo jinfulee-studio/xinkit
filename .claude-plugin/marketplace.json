@@ -1,7 +1,12 @@
 {
-  "name": "xinpub",
+  "name": "xinkit",
   "owner": { "name": "Felix" },
   "plugins": [
-    { "name": "xin", "source": "./xin", "description": "Xin public probe build", "category": "workflow" }
+    {
+      "name": "xin",
+      "source": "./xin",
+      "description": "Xin — a working methodology for AI coding agents: verification tiers, structured debugging, completion gates",
+      "category": "workflow"
+    }
   ]
 }

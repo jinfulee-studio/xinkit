@@ -1,6 +1,6 @@
 {
   "name": "xin",
-  "version": "0.0.1",
-  "description": "Xin public probe — verifies credential-free cloud delivery",
+  "version": "0.1.0",
+  "description": "Xin — verification tiers, structured debugging, and completion gates for AI coding agents",
   "hooks": "./hooks/hooks.json"
 }
