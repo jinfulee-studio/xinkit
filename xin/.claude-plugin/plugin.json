@@ -1,6 +1,6 @@
 {
   "name": "xin",
-  "version": "0.1.0",
-  "description": "Xin — verification tiers, structured debugging, and completion gates for AI coding agents",
+  "version": "0.2.0",
+  "description": "Xin — verification tiers, structured debugging, completion gates, plus review agents for silent failures, type design, and spec analysis",
   "hooks": "./hooks/hooks.json"
 }

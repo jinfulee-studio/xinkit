@@ -15,6 +15,21 @@ claude plugin marketplace add jinfulee-studio/xinkit
 claude plugin install xin@xinkit
 ```
 
+## What's inside
+
+**Session axioms** (injected at every session start, ~500 tokens)
+Verification tiers L1/L2/L3 · no claim without evidence · structured debugging with a
+one-failure stop rule · change channel after two same-shaped failures · less is more ·
+read before write.
+
+**Review agents** (read-only, invoked when relevant)
+- `silent-failure-hunter` — finds error handling that swallows failures without surfacing them
+- `type-design-analyzer` — scores encapsulation, invariant expression, and enforcement
+- `spec-analyst` — extracts requirements and specifications from code or prose
+
+**Skills**
+- `defense-audit` — evaluates a system's defenses across Detection → Prevention → Recovery → Learning
+
 ## What this is not
 
 **This repository is an automatically generated build target. It is read-only.**
