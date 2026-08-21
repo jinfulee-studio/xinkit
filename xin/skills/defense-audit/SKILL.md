@@ -1,5 +1,5 @@
 ---
-name: dprl-defense-audit
+name: defense-audit
 description: 使用 DPRL 四层框架（Detection→Prevention→Recovery→Learning）+ H/A/C 三类分层评估任何 Agent 系统或模块的防线完整性
 user-invocable: false
 ---
