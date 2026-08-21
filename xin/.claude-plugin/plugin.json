@@ -1,0 +1,6 @@
+{
+  "name": "xin",
+  "version": "0.0.1",
+  "description": "Xin public probe — verifies credential-free cloud delivery",
+  "hooks": "./hooks/hooks.json"
+}
