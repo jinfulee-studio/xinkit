@@ -1,6 +1,6 @@
 {
   "name": "xin",
-  "version": "0.7.0",
-  "description": "Xin — verification tiers, structured debugging, completion gates, code minimalism, and 14 review/build agents",
+  "version": "0.8.0",
+  "description": "Xin — a working methodology for AI coding agents: verification tiers, structured debugging, completion gates, code minimalism, plus 16 agents and 11 skills",
   "hooks": "./hooks/hooks.json"
 }

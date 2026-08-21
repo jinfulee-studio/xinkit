@@ -22,33 +22,31 @@ Verification tiers L1/L2/L3 · no claim without evidence · structured debugging
 one-failure stop rule · change channel after two same-shaped failures · less is more ·
 read before write.
 
-**Coding discipline**
+**Working discipline**
 - `code-minimalism` — same functionality, fewest elements: single responsibility, deep-not-shallow
-  modules, YAGNI, and the anti-patterns that look like good design (classitis, speculative abstraction)
-
-**Review and build agents** (invoked when relevant)
-- `code-architect` — system design, architecture decisions, technology selection
-- `code-reviewer` — PR review: correctness, security, convention compliance
-- `reviewer` — quality assessment with L3 evidence requirements (read the file, don't infer from reports)
-- `impl-agent` — implementation from spec and test skeletons
-- `test-specialist` — test strategy, coverage analysis, TDD/BDD
-- `silent-failure-hunter` — error handling that swallows failures without surfacing them
-- `type-design-analyzer` — encapsulation, invariant expression, invariant enforcement
-- `spec-analyst` — requirements and specifications from code or prose
-- `project-health-auditor` — technical debt, hotspots, speculative abstraction, dead code
-- `bugfixer` — root-cause-first fixing with a stop rule on repeated failure
-- `qa-tester` — end-to-end verification against real output, not reported success
-- `test-runner` — runs the suite, reads failures, proposes fixes
-- `research-agent` — structured external research with sourced findings
-- `doc-writer` — technical documentation, API docs, changelogs
-
-**Skills**
-- `incident-retro` — structured retrospective: classify → 5-Why root cause → extract the pattern →
-  produce four artifacts (rule / detector / blindspot entry / ledger row) → verify. The four artifacts
-  are the point: without them the same incident recurs.
+  modules, YAGNI, and the anti-patterns that look like good design
+- `incident-retro` — classify → 5-Why root cause → extract the pattern → four artifacts → verify
 - `defense-audit` — defenses across Detection → Prevention → Recovery → Learning
+- `conventional-commit` — commit message discipline and the workflow around it
+
+**Design**
+- `uiux-laws` — accessibility, feedback, layout, forms, typography, and the AI-era additions
 - `awwwards-design` — original award-grade design systems, motion language, page specs
 - `awwwards-audit` — evidence-based UI/UX audit scored on design, usability, creativity, content
+
+**Research**
+- `synthetic-panel` — simulate N customer interviews with LLM personas, map qualitative responses
+  to purchase intent via semantic anchors (method from arXiv 2510.08338)
+
+**claude.ai Artifacts**
+- `artifact-scaffold` / `artifact-mocks` / `artifact-ship` — scaffold a single-file artifact project,
+  manage mock fixtures for `window.claude.complete`, validate the hard constraints, then ship it
+
+**Agents** (16, invoked when relevant)
+Architecture and implementation — `code-architect` `impl-agent` `bugfixer` `test-specialist` `test-runner`
+Review — `code-reviewer` `reviewer` `silent-failure-hunter` `type-design-analyzer` `project-health-auditor` `qa-tester`
+Analysis and writing — `spec-analyst` `research-agent` `doc-writer`
+Artifacts — `artifact-prompt-engineer` `artifact-validator`
 
 
 ## What this is not
