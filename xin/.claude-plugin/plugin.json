@@ -1,6 +1,6 @@
 {
   "name": "xin",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Xin — verification tiers, structured debugging, completion gates, code minimalism, and 14 review/build agents",
   "hooks": "./hooks/hooks.json"
 }

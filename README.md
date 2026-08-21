@@ -43,6 +43,9 @@ read before write.
 - `doc-writer` — technical documentation, API docs, changelogs
 
 **Skills**
+- `incident-retro` — structured retrospective: classify → 5-Why root cause → extract the pattern →
+  produce four artifacts (rule / detector / blindspot entry / ledger row) → verify. The four artifacts
+  are the point: without them the same incident recurs.
 - `defense-audit` — defenses across Detection → Prevention → Recovery → Learning
 - `awwwards-design` — original award-grade design systems, motion language, page specs
 - `awwwards-audit` — evidence-based UI/UX audit scored on design, usability, creativity, content
