@@ -60,4 +60,3 @@ capability claim it can't back.
 
 MIT. See LICENSE.
 
-<!-- auto-bump 验证 -->
