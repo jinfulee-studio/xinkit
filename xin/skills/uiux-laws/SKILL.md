@@ -18,7 +18,7 @@ user-invocable: false
 ### Stage 0: 读取项目 Manifest
 
 读取 `<local path>`，提取 UI/UX 相关字段：
-- `design_system` → 决定 Stage 2 扫描基准（`see-ds-v2` 用 SEE Design System token，`tailwind-default` 用 Tailwind 标准）
+- `design_system` → 决定 Stage 2 扫描基准（`xin-ds-v2` 用 心 Design System token，`tailwind-default` 用 Tailwind 标准）
 - `i18n` → 决定是否检查多语言合规
 - `tech_stack.framework` → 决定组件库适配（nextjs → RSC 边界检查，react-vite → CSR 模式）
 - `custom.notification_channels` → 决定通知组件是否需要多渠道适配
@@ -89,14 +89,14 @@ user-invocable: false
 
 ---
 
-## SEE Layer Map
+## 心 Layer Map
 
-| Step | SEE Layer | Role |
+| Step | 心 Layer | Role |
 |------|------------|------|
 | 模块按需加载 | **L9 表观遗传** | 按前端任务类型条件激活对应模块（a11y/交互/表单等），非前端项目自动沉默 |
 | 规则热度追踪 | **L10 时间记忆** | 高频违反的规则升为热层，低频规则降温，审计时优先检查热层规则 |
 
-## SEE 三条自问
+## 心 三条自问
 
 - ① **自注册**：新 UI 规则模块（a11y/交互/表单等）加入 contexts/uiux/ 后，按需加载机制自动发现并整合
 - ② **自优化**：高频违反规则通过 L10 热度追踪自动升权，低频规则自动降温，无需人工排序
@@ -126,4 +126,4 @@ user-invocable: false
 
 | 版本 | 变更 | 日期 |
 |------|------|------|
-| 1.0.0 | 初始版本 + SEE 合规模板注入 | 2026-03-26 |
+| 1.0.0 | 初始版本 + 心 合规模板注入 | 2026-03-26 |

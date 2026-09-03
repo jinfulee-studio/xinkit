@@ -7,7 +7,7 @@ user-invocable: false
 # DPRL 防线审计 Skill
 
 ## 框架来源
-SEE 原创框架，综合安全工程 Defense-in-Depth 模型（Schneier 2000）与 NIST AI RMF 的 DETECT→PROTECT→RESPOND→RECOVER 职能映射，适配至 LLM Agent 系统的运行时防线场景。
+心 原创框架，综合安全工程 Defense-in-Depth 模型（Schneier 2000）与 NIST AI RMF 的 DETECT→PROTECT→RESPOND→RECOVER 职能映射，适配至 LLM Agent 系统的运行时防线场景。
 
 ## 使用方法
 对目标系统/模块执行以下分析：

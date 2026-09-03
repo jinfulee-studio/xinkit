@@ -125,7 +125,7 @@ commit 完成后，pm-trigger hook 自动激活（与自动交付路径共享）
 - WIP 提交建议在 description 中注明 `[WIP]`：`feat(auth): [WIP] add OAuth2 login`
 - 手动 commit 不替代自动交付流程的 lint/test 验证，功能完成时仍需走完整链路
 
-## SEE 三条自问
+## 心 三条自问
 
 - ① **自注册**：pm-trigger hook 自动触发，commit 完成后无需人工记忆调用后续流程
 - ② **自优化**：与自动交付路径共享 Co-Authored-By 签名格式，保持一致性无需额外配置
@@ -152,4 +152,4 @@ commit 完成后，pm-trigger hook 自动激活（与自动交付路径共享）
 
 | 版本 | 变更 | 日期 |
 |------|------|------|
-| 1.0.0 | 初始版本 + SEE 合规模板注入 | 2026-03-26 |
+| 1.0.0 | 初始版本 + 心 合规模板注入 | 2026-03-26 |
