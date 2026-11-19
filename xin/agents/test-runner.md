@@ -3,7 +3,7 @@ name: test-runner
 description: 测试执行专家。运行测试、分析失败原因、提供修复建议。在代码修改后使用。
 tools: Read, Grep, Glob, Bash(pnpm test, pnpm run, npm test, pytest, jest, vitest, go test)
 disallowedTools: Edit, Write, NotebookEdit, Task, TaskCreate, SendMessage
-model: haiku
+model: sonnet
 maxTurns: 40
 color: magenta
 ---
@@ -18,7 +18,7 @@ color: magenta
 3. 如果有失败：
    - 读取失败测试的源码
    - 读取被测代码
-   - 分析失败原因（注意：此步骤需要较强推理能力，建议升级为 sonnet 模型执行；当前模型 haiku 仅做简单失败摘要）
+   - 分析失败原因（此步要推理，所以本 agent 用 sonnet 而不是 haiku：haiku 只适合只读检索）
    - 给出修复建议（附代码）
 4. 如果全部通过：报告覆盖率摘要（如果有）
 

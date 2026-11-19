@@ -199,9 +199,10 @@ def main():
     ti_dir.mkdir(exist_ok=True)
     for aid, rows_a in sorted(_group(rows, lambda r: r["archetype_id"]).items()):
         srt = sorted(rows_a, key=lambda r: r["expected"])
-        pick = lambda rs: [{"persona_id": r["persona_id"], "expected": r["expected"],
-                            "price_label": r["price_label"], "review": r["review"]}
-                           for r in rs]
+        def pick(rs):
+            return [{"persona_id": r["persona_id"], "expected": r["expected"],
+                                    "price_label": r["price_label"], "review": r["review"]}
+                                   for r in rs]
         quotes[aid] = {"bottom": pick(srt[:3]), "top": pick(srt[-3:][::-1])}
         with (ti_dir / f"{aid}.jsonl").open("w", encoding="utf-8") as f:
             for r in srt:

@@ -1,6 +1,7 @@
 ---
 name: artifact-validator
-model: opus
+model: sonnet
+effort: medium
 maxTurns: 30
 color: blue
 disallowedTools: [Edit, Write, NotebookEdit]

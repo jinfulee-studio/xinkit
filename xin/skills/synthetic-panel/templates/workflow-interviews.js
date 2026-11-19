@@ -4,6 +4,7 @@ export const meta = {
   phases: [{ title: 'Interview', detail: 'N agents × batch_size personas，产物写文件' }],
 }
 // args: { brief, outDir, model?, batches?: [{id, file}] } 或简写 { batchesDir, count }（生成 batch-001..batch-NNN）
+// 每个 agent() 都显式写 model 与 effort，不写就继承调用方会话的模型和思考深度；写感想是开放的活，effort 取 high
 // 防御：部分版本 harness 把 args 注入为 JSON 字符串；args 只读，一律解析/复制到本地变量
 const cfg = typeof args === 'string' ? JSON.parse(args) : (args || {})
 let batches = Array.isArray(cfg.batches) && cfg.batches.length ? cfg.batches : null
@@ -32,7 +33,7 @@ const results = await parallel(batches.map(b => () =>
    格式（严格 JSON，UTF-8）：{"batch_id":"${b.id}","reviews":[{"persona_id":"P0001","review":"..."}, ...]}
    reviews 必须覆盖批次文件里**全部** persona 的 id，一个都不能少。
 5. 最终回复只写一行：${b.id}: <数量> reviews written —— 禁止在回复中包含任何感想正文。`,
-    { label: `interview:${b.id}`, phase: 'Interview', model: cfg.model || 'sonnet' }
+    { label: `interview:${b.id}`, phase: 'Interview', model: cfg.model || 'sonnet', effort: 'high' }
   )
 ))
 const ok = results.filter(Boolean).length

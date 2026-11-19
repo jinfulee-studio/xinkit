@@ -3,7 +3,8 @@ name: silent-failure-hunter
 description: 静默失败审计专家，专注 catch/fallback/error handling 的隐性缺陷检测。使用场景：错误处理审计、catch 范围评估、fallback 行为分析、用户反馈黑洞排查。
 tools: Read, Grep, Glob, Bash(git:diff, git:log)
 disallowedTools: Edit, Write, NotebookEdit
-model: opus
+model: sonnet
+effort: medium
 maxTurns: 30
 color: blue
 ---

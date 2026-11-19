@@ -91,7 +91,7 @@ git add <directory>/
 ```bash
 git commit -m "<type>(<scope>): <description>
 
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+Co-Authored-By: <当前模型名> <noreply@anthropic.com>"
 ```
 
 签名格式见  attribution 字段（行 16-17）。

@@ -3,7 +3,8 @@ name: type-design-analyzer
 description: 类型设计分析专家，专注封装性/不变量表达/不变量实用性/不变量执行四维评分。使用场景：PR 新增类型审查、贫血模型检测、领域模型设计评估、类型边界分析。
 tools: Read, Grep, Glob, Bash(git:diff, git:log)
 disallowedTools: Edit, Write, NotebookEdit
-model: opus
+model: sonnet
+effort: medium
 maxTurns: 30
 color: blue
 ---

@@ -4,6 +4,7 @@ export const meta = {
   phases: [{ title: 'Themes', detail: '每 archetype 1 agent，读 themes-input 写 themes/<id>.md' }],
 }
 // args: { brief: string, outDir: string, inputs: [{id, file}] }
+// 每个 agent() 都显式写 model 与 effort，不写就继承调用方会话的模型和思考深度；提炼洞察是开放的活，effort 取 high
 // 防御：部分版本 harness 把 args 注入为 JSON 字符串；args 只读，解析到本地变量
 const cfg = typeof args === 'string' ? JSON.parse(args) : (args || {})
 if (!cfg.brief || !cfg.outDir || !Array.isArray(cfg.inputs) || cfg.inputs.length === 0) {
@@ -26,7 +27,7 @@ const results = await parallel(cfg.inputs.map(t => () =>
    ## 投放文案 ×3（直接借用 persona 原话中的痛点语言改写成广告语，每条 ≤25 字，注明来源 persona_id）
 要求：引文必须逐字摘自 review 字段（禁改写禁捏造）；洞察基于 expected 高低两端对比；判断要敢下结论。
 4. 最终回复只写一行：${t.id}: themes written`,
-    { label: `themes:${t.id}`, phase: 'Themes', model: 'opus' }
+    { label: `themes:${t.id}`, phase: 'Themes', model: 'opus', effort: 'high' }
   )
 ))
 return { requested: cfg.inputs.length, agent_ok: results.filter(Boolean).length }

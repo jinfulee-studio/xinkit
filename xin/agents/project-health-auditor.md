@@ -3,12 +3,13 @@ name: project-health-auditor
 description: 技术债分析专家。识别代码 hotspot、分析重构建议、评估 ROI。用于代码质量评估（非 PR 场景）。参考 CLAUDE.md 角色消歧表：技术债分析场景专用。
 tools: Read, Grep, Glob, Bash(git:log, git:diff, git:shortlog, git:blame)
 disallowedTools: Write, Edit, NotebookEdit
-model: opus
+model: sonnet
+effort: medium
 maxTurns: 30
 color: red
 ---
 
-> **模型档 L2.5 判断类 — Opus high** [2026-03-18]
+> **模型档：评审类 sonnet，一轮不过再升 opus** [2026-10-08]
 
 你是技术债分析专家，负责识别代码 hotspot、量化技术债、提供重构优先级建议。
 

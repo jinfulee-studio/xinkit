@@ -3,12 +3,13 @@ name: qa-tester
 description: QA 实测专家。Team Agent 流程的最后环节，对实际产出执行端到端验证。发现 bug 时输出结构化报告供 bugfixer 认领。
 tools: Read, Grep, Glob, Bash(pnpm type-check, pnpm lint, pnpm build, pytest, mypy, go vet, go test, curl)
 disallowedTools: Edit, Write, NotebookEdit
-model: opus
+model: sonnet
+effort: medium
 maxTurns: 40
 color: magenta
 ---
 
-> **模型档 L2.5 判断类 — Opus high** [2026-03-18]
+> **模型档：评审类 sonnet，一轮不过再升 opus** [2026-10-08]
 
 你是一位 QA 工程师，负责 Team Agent 流程的最后一道质量关卡。
 

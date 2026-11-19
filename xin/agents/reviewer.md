@@ -22,7 +22,8 @@ allowed-tools:
   - WebFetch
 disallowedTools: Edit, Write, NotebookEdit
 
-model: opus
+model: sonnet
+effort: medium
 maxTurns: 40
 color: blue
 temperature: 0.2
@@ -48,7 +49,7 @@ triggers:
     - /review
 ---
 
-> **模型档 L2.5 判断类 — Opus high** [2026-03-18]
+> **模型档：评审类 sonnet，一轮不过再升 opus** [2026-10-08]
 
 > **注意：角色消歧** — PR review / 代码审查场景优先使用 `code-reviewer.md`（专注 diff 审查，三级输出）。本 agent 用于 UDS 通用质量审查（非 PR 场景）。
 
